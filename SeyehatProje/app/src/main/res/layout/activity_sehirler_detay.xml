@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hava"
+    android:orientation="vertical"
+    tools:context=".Sehirler_detay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detayResim"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                app:srcCompat="@drawable/ist2" />
+
+            <TextView
+                android:id="@+id/detayAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:text="İstanbul"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/detayAciklama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="İstanbul Hakkında:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detayLink1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Restorantlar için:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detayLink2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oteller için:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detayLink3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gezilecek Yerler:"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

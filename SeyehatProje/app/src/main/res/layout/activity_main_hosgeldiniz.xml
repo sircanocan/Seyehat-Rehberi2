@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hava"
+    tools:context=".MainHosgeldiniz">
+
+
+    <Button
+        android:id="@+id/btnCikisYap"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="140dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:text="Çıkış Yap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDevamEt" />
+
+    <Button
+        android:id="@+id/btnDevamEt"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="140dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:text="Devam Et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciParola" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="127dp"
+        android:text="Hoşgeldiniz"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kullaniciBilgisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="36dp"
+        android:text="Kullanıcı Bilgisi:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/kullaniciParola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/kullaniciParola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="232dp"
+        android:text="Kullanıcı Parola:"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciBilgisi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
